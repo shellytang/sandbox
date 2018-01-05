@@ -1,6 +1,5 @@
 'use strict';
 
-
 $('#add').click(function (e) {
   e.preventDefault();
   $('#prototype').clone().removeAttr('id').removeClass('prototype').addClass('cloned').appendTo('#img-grid');
