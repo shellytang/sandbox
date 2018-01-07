@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .sushi-container {
@@ -17,34 +18,53 @@
   position: absolute;
   left: -200px;
   padding: 20px;
-  animation-name: slideAcross;
-  animation-duration: 18s;
-  animation-iteration-count: infinite; 
-  animation-timing-function: linear;
+  -webkit-animation-name: slideAcross;
+          animation-name: slideAcross;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; 
+  -webkit-animation-timing-function: linear; 
+          animation-timing-function: linear;
 } 
 
 .sushi-1 {
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .sushi-2 {
-  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .sushi-3 {
-  animation-delay: 7s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 .sushi-4 {
-  animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 .sushi-5 {
-  animation-delay: 13s;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
 } 
 
 .sushi-6 {
-  animation-delay: 16s;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+@-webkit-keyframes slideAcross {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 120%;
+  }
 }
 
 @keyframes slideAcross {
