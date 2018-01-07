@@ -75,3 +75,46 @@
     margin-left: 120%;
   }
 }
+
+.table-container {
+  background-color: #76949F;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.table-left {
+  margin-top: 30px;
+}
+
+/* dropzone */
+.table-center {  
+  padding: 5px;
+  margin-top: 15px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.plate {
+  margin-top: 10px;
+  width: 80%;
+  height: 250px;
+  padding-right: 5px;
+  background-color: #EDE7D9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.condiments {
+  margin-top: 10px;
+}
+
+
