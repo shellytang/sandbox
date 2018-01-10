@@ -1,5 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #42a1c6;
+}
+
+.paw-container {
+  width: 150px;
+  height: 300px;
+  background-color: #57585A;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin-left: 300px;
+  animation: catch 3s infinite;
+  z-index: 2;
+}
+
+.paw-pads {
+  position: relative;
+  height: 100px;
+  width: 150px;
+  top: 150px;
+}
+
+.main {
+  position: relative;
+  height: 80px;
+  width: 70px;
+  margin: auto;
+  border-radius: 50%;
+  top: 15px;
+  background-color: #FFABAB;
+}
+
+.small-pads {
+  position: relative;
+  text-align: center;
+}
+
+.first, .second, .third, .fourth {
+  position: relative;
+  background-color: #FFABAB;
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  top: 30px;
+}
+
+.first, .fourth {
+  top: -10px;
+}
+
+.first {
+  left: -5px;
+  transform: rotate(10deg);
+}
+
+.fourth {
+  right: -5px;
+  transform: rotate(-10deg);
+}
+
+.second {
+  transform: rotate(10deg);
+  top: 20px;
+  margin-right: 4px;
+}
+
+.third {
+  transform: rotate(-10deg);
+  top: 20px;
+  margin-left: 4px;
 }
 
 .fish {
@@ -119,6 +193,21 @@ body {
   }
   100% {
     transform: translateY(-170px) translateX(1200px) rotate(-40deg);
+  }
+}
+
+@keyframes catch {
+  0% {
+    transform: translateY(-400px);
+  }
+  20%, 40%, 60% { 
+    transform: translateY(-60px) rotate(-30deg);
+  }
+  30%, 50% {
+    transform: translateY(-60px) rotate(30deg);
+  }
+  100% {
+    transform: translateY(-600px);
   }
 }
 
