@@ -8,7 +8,7 @@ $('#add').click(function (e) {
 $('#remove').click(function (e) {
   e.preventDefault();
   $('.cloned:last-of-type').remove();
-}); 
+});
 
 // add and remove with vanilla JS 
 
