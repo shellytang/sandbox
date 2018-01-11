@@ -22,7 +22,7 @@ $(function () {
   }
 
   function makePalette() {
-    let colorArr = ['#EE204D', '#FF7538', '#FCE883', '#1CAC78', '#1F75FE', '#7B00E4', '#410082','#FFFFFF', '#000000'];
+    let colorArr = ['#EE204D', '#FF7538', '#FCE883', '#1CAC78', '#1F75FE', '#7B00E4', '#964B00','#FFFFFF', '#000000'];
     let swatches = $('#color-palette').children();
 
     for(let i = 0; i < swatches.length; i++) {
