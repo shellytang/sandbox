@@ -3,36 +3,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <title>Koala</title>
 </head>
-<body>
-  <div class="box">
-    <div class="head">
-      <div class="head-copy"></div>
+<div id="app">
+  <body>
+    <div class="box">
+      <div class="head">
+        <div class="head-copy"></div>
   
-      <div class="ear-left">
-        <div class="inner-ear"></div>
+        <div class="ear-left">
+          <div class="inner-ear"></div>
+        </div>
+  
+        <div v-on:click="dragEarRight" v-bind:class="earClass">
+          <div class="inner-ear"></div>
+        </div>
+  
+        <div class="eye-left">
+          <div class="pupil"></div>
+        </div>
+  
+        <div class="eye-right">
+          <div class="pupil"></div>
+        </div>
+  
+        <div class="nose"></div>
+  
+        <div class="hair-left"></div>
+        <div class="hair-right"></div>
       </div>
-  
-      <div class="ear-right">
-        <div class="inner-ear"></div>
-      </div>
-  
-      <div class="eye-left">
-        <div class="pupil"></div>
-      </div>
-  
-      <div class="eye-right">
-        <div class="pupil"></div>
-      </div>
-  
-      <div class="nose"></div>
-  
-      <div class="hair-left"></div>
-      <div class="hair-right"></div>
     </div>
-  </div>
+    <script src="main.js"></script>
+  </body>
+</div>
 
-</body>
 </html>
