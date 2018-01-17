@@ -59,3 +59,108 @@ body {
   background: #E60001;
   height: 90%
 }
+
+.analog-left {
+  position: absolute;
+  border-radius: 50%;
+  background: black;
+  height: 13%;
+  width: 40%;
+  top: 20%;
+  left: 25%;
+  border: solid 5px #202226;
+}
+
+.analog-right {
+  position: absolute;
+  border-radius: 50%;
+  background: black;
+  height: 13%;
+  width: 40%;
+  top: 50%;
+  left: 25%;
+  border: solid 5px #202226;
+}
+
+.d-pad-container-left {
+  position: absolute;
+  left: 15%;
+  height: 23%;
+  width: 70%;
+  /* background: none; */
+  top: 45%;
+}
+
+.d-pad-container-right {
+  position: absolute;
+  left: 15%;
+  height: 23%;
+  width: 70%;
+  /* background: none; */
+  top: 20%;
+}
+
+.d-pad-top {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  left: 35%;
+  top: 0%;
+  background: black;
+  border-radius: 50%;
+}
+
+.d-pad-bottom {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  left: 35%;
+  bottom: 0%;
+  background: black;
+  border-radius: 50%;
+}
+
+.d-pad-left {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  left: 0%;
+  bottom: 35%;
+  background: black;
+  border-radius: 50%;
+}
+
+.d-pad-right {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  right: 0%;
+  bottom: 35%;
+  background: black;
+  border-radius: 50%;
+}
+
+.square-button {
+  position: absolute;
+  bottom: 15%;
+  right: 13%;
+  height: 7%;
+  width: 23%;
+  background: black;
+}
+
+.ellipse-button {
+  position: absolute;
+  height: 2%;
+  width: 30%;
+  top: 10%;
+  right: 5%;
+  background: black;
+  border-radius: 50px;
+}
+
+.d-pad-2-container {
+  position: absolute;
+  background: white;
+  height: 8%;
+}
