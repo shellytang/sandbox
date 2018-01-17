@@ -10,25 +10,33 @@
   <title>Build a Pizza</title>
 </head>
 <body>
-  <div class="pizza-maker-container">
-    <div class="pizza-container">
+  <main>
+    <div class="right-container">
       <div class="pizza">
         <div class="sauce"></div>
         <div class="cheese"></div>
       </div>
     </div>
-    <div class="toppings-container">
-      <div class="pepperoni toppings"></div>
-      <div class="bell-pepper toppings"></div>
-      <div class="mushroom-box toppings">
-        <div class="mushroom-top"></div>
-        <div class="mushroom-bottom"></div>
+    <div class="left-container">
+      <div class="toppings-container">
+        <div class="pepperoni toppings"></div>
+        <div class="bell-pepper toppings"></div>
+        <div class="mushroom-box toppings">
+          <div class="mushroom-top"></div>
+          <div class="mushroom-bottom"></div>
+        </div>
+        <div class="olives-outer toppings">
+          <div class="olives-inner"></div>
+        </div>
       </div>
-      <div class="olives-outer toppings">
-        <div class="olives-inner"></div>
+      <div class="order">
+        <h3>Your Order</h3>
+        <p class="base-item">18" cheese pizza (+$1.50/topping)</p>
+        <p class="total">Total: $16</p>
+        <button>Order</button>
       </div>
     </div>
-  </div>
+  </main>
 
   <script src="main.js"></script>
 </body>
