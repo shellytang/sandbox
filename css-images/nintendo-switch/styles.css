@@ -1,0 +1,61 @@
+body {
+  background: #B5E4F6;
+}
+
+.box {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 8%;
+  /* background: #FFF; */
+  height: 400px;
+  width: 600px;
+
+  border: solid 3px white;
+}
+
+.switch-container {
+ position: absolute;
+ width: 80%;
+ height: 60%;
+ top: 20%;
+ left: 10%; 
+}
+
+.joy-con-left {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background: #737A80;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.joy-con-right {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  right: 0%;
+  background: #737A80;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.screen-outer {
+  position: absolute;
+  background: none;
+  width: 70%;
+  left: 15%;
+  background: black;
+  height: 100%
+}
+
+.screen-inner {
+  position: absolute;
+  background: none;
+  width: 90%;
+  left: 5%;
+  top: 5%;
+  background: #E60001;
+  height: 90%
+}
