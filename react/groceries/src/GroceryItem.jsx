@@ -1,11 +1,19 @@
 import React from 'react';
+import './GroceryItem.css';
 
 const GroceryItem = ({item, deleteItem, index}) => {
   return (
-    <li>
-      <input type="checkbox" name="item"/>
-      <label>{item}</label>
-      <button onClick={() => deleteItem(index)}>Delete</button>
+    <li className="container">
+      <label className="listItem">{item}
+        <input 
+          type="checkbox" 
+          name="item" 
+          className="checkBox" 
+          check="checked" 
+        />
+        <span className="checkMark"></span>
+      </label>
+      <button className="deleteButton" onClick={() => deleteItem(index)}>Delete</button>
     </li>
   )
 }
