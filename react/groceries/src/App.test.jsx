@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import App from './App';
 import Form from './Form';
 import GroceryList from './GroceryList';
@@ -17,5 +17,9 @@ describe('<App />', () => {
   });
   it('renders a grocery list', () => {
     expect(wrapper.find(GroceryList)).toHaveLength(1);
+  });
+  it('renders initial state', () => {
+    wrapper = mount(<App />);
+    expect(wrapper.state('groceries')).toHaveLength(0);
   });
 });
