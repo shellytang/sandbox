@@ -1,9 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import App from './App';
+import Form from './Form';
+import GroceryList from './GroceryList';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('<App />', () => {
+  let wrapper;
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  });
+  it('renders without crashing', () => {
+    expect(wrapper.find('.App')).toHaveLength(1);
+  });
+  it('renders a form', () => {
+    expect(wrapper.find(Form)).toHaveLength(1);
+  });
+  it('renders a grocery list', () => {
+    expect(wrapper.find(GroceryList)).toHaveLength(1);
+  });
 });
