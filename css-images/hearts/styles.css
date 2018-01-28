@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.heart {
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+  width: 50px;
+  height: 40px;
+  z-index: 5;
+  /* opacity: .50; */
+  animation: up 4s infinite;
+}
+
+/* use pseudo selectors instead creating new elements */
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 25px;
+  top: 0;
+  width: 25px;
+  height: 40px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  background-color: red;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%; 
+  /* The transform origin is the point around which a transformation is applied. */
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.heart-2 {
+  left: 350px;
+  animation: up 3s infinite;
+}
+
+.heart-3 {
+  left: 750px;
+  animation: up 5s infinite;
+}
+ 
+.heart-4 {
+  left: 1150px;
+  animation: up 6s infinite;
+}
+
+.heart-5 {
+  left: 50px;
+  animation: up 5s infinite;
+}
+
+.heart-6 {
+  left: 300px;
+  opacity: .30;
+  animation: up 4s infinite;
+}
+
+.heart-7 {
+  left: 670px;
+  animation: up 4s infinite;
+}
+
+.heart-8 {
+  left: 1050px;
+  opacity: .30;
+  animation: up 3s infinite;
+} 
+
+@keyframes up {
+  100% {
+    transform: translateY(-800px);
+  }
+}
+
