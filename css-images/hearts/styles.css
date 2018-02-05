@@ -19,8 +19,10 @@ html {
   top: -15%;
   left: 27%;
   text-align: center;
-  font-family: sans-serif;
-  color: #F57B75;
+  font-family: 'Nunito', sans-serif;
+  color: #F05257;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 1px 1px 1px #E28B9C; 
 }
 
 h2 {
@@ -97,12 +99,6 @@ h2 {
   animation: up 3s infinite;
 } 
 
-@keyframes up {
-  100% {
-    transform: translateY(-800px);
-  }
-}
-
 .light-container {
   width: 300px;
   height: 300px;
@@ -126,7 +122,7 @@ h2 {
   background-color: #FFDE3D;
   position: absolute;
   left: 40%;
-  bottom: 25%
+  bottom: 25%;
 }
 
 
@@ -231,13 +227,12 @@ button {
   font-size: 22px;
   color: #fff;
   background-color: #3A7CEC;
-  transition-duration: 0.4s;
   border: none;
   z-index: 10;
 }
 
 button:hover {
-  background-color: #4f8cef;
+  background-color: #40A0F5;
 }
 
 .overlay {
@@ -248,13 +243,17 @@ button:hover {
   z-index: 10;
   background-color: #040404;
   position: fixed;
-  /* background-color: #feeae7; */
-  /* display: none; */
 }
 
 .hide {
   opacity: 0;
-  transition: opacity 1000ms;
-  /* visibility 0s linear 300ms,  */
-  /* delay the visibility:hidden declaration, so that we can see the fade-out transition first.  */
+  transition: opacity 1.5s;
+  /* property name | duration | timing function | delay */
+}
+
+/* animations */
+@keyframes up {
+  100% {
+    transform: translateY(-800px);
+  }
 }
